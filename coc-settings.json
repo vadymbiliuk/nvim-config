@@ -1,0 +1,26 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "eslint.autoFixOnSave": true,
+  "explorer.width": 45,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit",
+    ".": "toggleHidden"
+  },
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": ["haskell", "lhaskell"]
+    }
+  }
+}
